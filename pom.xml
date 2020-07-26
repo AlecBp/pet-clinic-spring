@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.alecbp</groupId>
     <artifactId>pet-clinic-spring</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>pet-clinic-spring</name>
     <description>Pet Clinic project</description>
 
@@ -41,6 +41,6 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/AlecBp/pet-clinic-spring.git</developerConnection>
-      <tag>pet-clinic-spring-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
