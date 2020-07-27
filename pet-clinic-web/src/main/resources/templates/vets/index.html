@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>List of Vets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<h1 th:text="'List of Vets'">List of Vets</h1>
+<!--/*@thymesVar id="vet" type="com.alecbp.petclinicspring.model.Vet"*/-->
+
+<h1 class="text-center my-5" th:text="'List of Vets'">List of Vets</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="vet : ${vets}">
+            <td th:text="${vet.id}">1</td>
+            <td th:text="${vet.firstName}">John</td>
+            <td th:text="${vet.lastName}">Doe</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
